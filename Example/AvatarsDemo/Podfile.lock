@@ -1,0 +1,16 @@
+PODS:
+  - Avatars (0.1.0)
+
+DEPENDENCIES:
+  - Avatars (from `../../`)
+
+EXTERNAL SOURCES:
+  Avatars:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Avatars: fcc327761c85799285b4a259c65a0e22eec0fcf7
+
+PODFILE CHECKSUM: ff3efe94652f927871368a53e09aaa803d4bb0c8
+
+COCOAPODS: 1.5.0
