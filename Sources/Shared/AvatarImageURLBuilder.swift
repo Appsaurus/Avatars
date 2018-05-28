@@ -7,12 +7,11 @@
 
 import Foundation
 
-public protocol AvatarImageURLProvider{
-	func urlString(size: Int) -> String
-	func url(size: Int) -> URL
-}
-public extension AvatarImageURLProvider{
-
+public class AvatarImageURLProvider{
+	func urlString(size: Int) -> String{
+		assertionFailure(String(describing: self) + " is abstract. You must implement " + #function)
+		return ""
+	}
 	public func url(size: Int = 300) -> URL{
 		return URL(string: urlString(size: size))!
 	}

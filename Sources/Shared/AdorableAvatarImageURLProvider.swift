@@ -18,7 +18,7 @@ public class AdorableAvatarImageURLProvider: AvatarImageURLProvider{
 		self.version = version
     }
 
-	public func urlString(size: Int = 300) -> String {
+	public override func urlString(size: Int = 300) -> String {
 		return "https://api.adorable.io/avatar\(version == .new ? "s" : "")/\(size)/\(userIdentifier)"
 	}
 }

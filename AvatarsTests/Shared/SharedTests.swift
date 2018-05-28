@@ -1,26 +1,36 @@
 import XCTest
+import SwiftTestUtils
+import Avatars
 
-class SharedTests: XCTestCase {
+class SharedTests: BaseTestCase {
 
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-  }
 
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
-  }
+	//MARK: Linux Testing
+	static var allTests = [
+		("testLinuxTestSuiteIncludesAllTests", testLinuxTestSuiteIncludesAllTests),
+		("testGravatarURLProvider", testGravatarURLProvider),
+		("testAdorableAvatarURLProvider", testAdorableAvatarURLProvider)
+	]
 
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-  }
+	func testLinuxTestSuiteIncludesAllTests(){
+		assertLinuxTestCoverage(tests: type(of: self).allTests)
+	}
 
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measure {
-      // Put the code you want to measure the time of here.
-    }
-  }
+	let testUsername = "beau"
+	let size = 300
+
+	public func testGravatarURLProvider() throws{
+		let testEmail = "\(testUsername)@automattic.com"
+		let gravatarURL: URL = .avatarImageURL(size: size, provider: .gravatar(emailAddress: testEmail))
+		XCTAssertEqual("https://secure.gravatar.com/avatar/22bd03ace6f176bfe0c593650bcf45d8?d=mm&r=pg&s=\(size)", gravatarURL.absoluteString)
+		let gravatarData = try? Data(contentsOf: gravatarURL)
+		XCTAssertNotNil(gravatarData)
+	}
+
+	public func testAdorableAvatarURLProvider() throws{
+		let adorableAvatarURL: URL = .avatarImageURL(size: size, provider: .adorableAvatar(userIdentifier: testUsername))
+		XCTAssertEqual("https://api.adorable.io/avatars/\(size)/\(testUsername)", adorableAvatarURL.absoluteString)
+		let adorableAvatarData = try? Data(contentsOf: adorableAvatarURL)
+		XCTAssertNotNil(adorableAvatarData)
+	}
 }

@@ -8,9 +8,9 @@ let package = Package(
 	products: [
 		.library(name: "Avatars", targets: ["Avatars"])
 	],
-	dependencies: [],
+	dependencies: [.package(url: "https://github.com/Appsaurus/SwiftTestUtils",  .upToNextMajor(from: "0.1.0"))],
 	targets: [
-	.target(name: "Avatars", dependencies: [], path: "Sources/Shared"),
-		.testTarget(name: "AvatarsTests", dependencies: ["Avatars"], path: "AvatarsTests/Shared")
+		.target(name: "Avatars", dependencies: [], path: "Sources/Shared"),
+		.testTarget(name: "AvatarsTests", dependencies: ["Avatars", "SwiftTestUtils"], path: "AvatarsTests/Shared")
 	]
 )
