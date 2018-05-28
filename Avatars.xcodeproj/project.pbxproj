@@ -63,6 +63,7 @@
 /* Begin PBXFileReference section */
 		"Avatars::Avatars::Product" /* Avatars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Avatars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Avatars::AvatarsTests::Product" /* AvatarsTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AvatarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49DB68E20BCA48700D772D8 /* Avatars.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Avatars.podspec; sourceTree = "<group>"; };
 		OBJ_10 /* AvatarImageURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageURLBuilder.swift; sourceTree = "<group>"; };
 		OBJ_11 /* GravatarImageURLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravatarImageURLProvider.swift; sourceTree = "<group>"; };
 		OBJ_12 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
+				E49DB68E20BCA48700D772D8 /* Avatars.podspec */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,

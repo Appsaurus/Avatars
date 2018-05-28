@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Avatars"
   s.summary          = "A short description of Avatars."
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.homepage         = "github.com/Strobocop/Avatars"
   s.license          = 'MIT'
   s.author           = { "Brian Strobach" => "brian@appsaurus.io" }
@@ -21,11 +21,6 @@ Pod::Spec.new do |s|
   s.tvos.source_files = 'Sources/{iOS,tvOS,Shared}/**/*'
   s.osx.source_files = 'Sources/{macOS,Shared}/**/*'
   s.watchos.source_files = 'Sources/{watchOS,Shared}/**/*'
-
-  # s.ios.frameworks = 'UIKit', 'Foundation'
-  # s.osx.frameworks = 'Cocoa', 'Foundation'
-  # s.dependency 'Whisper', '~> 1.0'
-  # s.watchos.exclude_files = ["Sources/AnimatedImageView.swift"] 
 
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
 end
