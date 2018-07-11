@@ -13,9 +13,7 @@
 
 ## Usage
 
-```swift
-<API>
-```
+Usage description coming soon.
 
 ## Installation
 
@@ -23,7 +21,7 @@
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Avatars'
+pod 'Avatars', :git => 'https://github.com/Appsaurus/Avatars'
 ```
 
 **Avatars** is also available through [Carthage](https://github.com/Carthage/Carthage).
