@@ -11,10 +11,6 @@ Micro library that generates urls for remote avatar images.
 
 Currently supports [Gravatar](https://www.gravatar.com) and [Adorable Avatars](http://avatars.adorable.io).
 
-## Usage
-
-Usage description coming soon.
-
 ## Installation
 
 **Avatars** is available through [Swift Package Manager](https://swift.org/package-manager/). To install, add the following to your Package.swift file.
@@ -47,6 +43,10 @@ github "Strobocop/Avatars"
 ```
 
 **Avatars** can also be installed manually. Just download and drop `Sources` folders in your project.
+
+## Usage
+
+Usage description coming soon.
 
 ## Contributing
 
