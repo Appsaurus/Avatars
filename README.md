@@ -17,6 +17,21 @@ Usage description coming soon.
 
 ## Installation
 
+**Avatars** is available through [Swift Package Manager](https://swift.org/package-manager/). To install, add the following to your Package.swift file.
+
+```swift
+let package = Package(
+    name: "YourProject",
+    dependencies: [
+        ...
+        .package(url: "https://github.com/Appsaurus/Avatars", from: "1.0.0"),
+    ],
+    targets: [
+      .target(name: "YourApp", dependencies: ["Avatars", ... ])
+    ]
+)
+```
+
 **Avatars** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
