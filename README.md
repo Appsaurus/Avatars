@@ -9,7 +9,9 @@
 
 ## Description
 
-**Avatars** description.
+Micro library that generates urls for remote avatar images.
+
+Currently supports [Gravatar](https://www.gravatar.com) and [Adorable Avatars](http://avatars.adorable.io).
 
 ## Usage
 
